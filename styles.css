@@ -66,10 +66,11 @@ body {
   padding: 20px;
 }
 
-.footer {
+.footer-content {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #979797;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 700px) {
