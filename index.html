@@ -1,858 +1,106 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Danny Thai: e-Portfolio Site</title>
     <meta charset="UTF-8">
-    <title>Danny Thai | ePortfolio</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
     <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <style>
-
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            background-color: #2A9AF6;
-        }
-
-        .navbar-brand {
-            font-weight: bold;
-        }
-
-        .hero {
-            background-color: #2A9AF6;
-            color: white;
-            padding: 90px 30px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 50px;
-            font-weight: bold;
-        }
-
-        .hero p {
-            font-size: 20px;
-        }
-
-        .section-title {
-            margin-bottom: 25px;
-            font-weight: bold;
-        }
-
-        .content-section {
-            background-color: white;
-            padding: 35px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .skill-card {
-            text-align: center;
-            padding: 25px;
-            margin-bottom: 20px;
-            height: 100%;
-        }
-
-        .project-card {
-            height: 100%;
-        }
-
-        .project-card .card-body {
-            padding: 25px;
-        }
-
-        .circle-img {
-            width: 140px;
-            height: 140px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        .sidebar {
-            background-color: #f2f2f2;
-            padding: 25px;
-            border-radius: 8px;
-        }
-
-        .progress {
-            height: 20px;
-            margin-bottom: 15px;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
-
-        .contact-button {
-            margin: 5px;
-        }
-
-    </style>
+    <script src="script.js"></script>
 </head>
-
 
 <body>
 
-<div class="container-fluid">
-
-    <!-- NAVIGATION -->
-    <div class="row">
-        <div class="col-12">
-
-            <nav class="navbar navbar-expand-md navbar-dark">
-
-                <a class="navbar-brand" href="#home">
-                    Danny Thai
-                </a>
-
-                <button class="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-
-                    <span class="navbar-toggler-icon"></span>
-
-                </button>
-
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-                    <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">
-                                Home
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">
-                                About
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">
-                                Education
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">
-                                Skills
-                            </a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle"
-                               href="#"
-                               id="navbardrop"
-                               data-toggle="dropdown">
-
-                                Portfolio
-
-                            </a>
-
-                            <div class="dropdown-menu">
-
-                                <a class="dropdown-item" href="#projects">
-                                    Projects
-                                </a>
-
-                                <a class="dropdown-item" href="#experience">
-                                    Experience
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">
-                                Contact
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </nav>
-
-        </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>Danny Thai</h1>
+        <p>e-Portfolio</p>
     </div>
 
-
-    <!-- HERO / HOME -->
-    <div class="row" id="home">
-
-        <div class="col-12">
-
-            <div class="hero">
-
-                <h1>Hi, I'm Danny Thai</h1>
-
-                <p>
-                    Information Technology & Information Science Student
-                </p>
-
-                <p>
-                    Welcome to my ePortfolio!
-                </p>
-
-                <a href="#about"
-                   class="btn btn-light btn-lg">
-
-                    Learn More About Me
-
-                </a>
-
-            </div>
-
-        </div>
-
+    <!-- Navigation -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="test.html">Projects & Goals</a>
+        <a href="exper.html">Experience</a>
     </div>
 
+    <!-- Main Content -->
+    <div class="main">
 
-    <!-- ABOUT -->
-    <div class="row mt-4" id="about">
-
-        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12">
-
-            <div class="content-section">
-
-                <h2 class="section-title">
-                    About Me
-                </h2>
-
-                <p>
-                    Hello! My name is Danny Thai. I am interested in
-                    technology, information science, libraries, and
-                    digital resources.
-                </p>
-
-                <p>
-                    My academic and professional interests combine
-                    information technology with public service. I enjoy
-                    learning how technology can be used to make
-                    information easier to access, understand, and use.
-                </p>
-
-                <p>
-                    Through my coursework and projects, I have developed
-                    experience with web development, programming,
-                    databases, data analysis, and information
-                    organization.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- QUICK INFO SIDEBAR -->
-        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
-
-            <div class="sidebar">
-
-                <h3>Quick Information</h3>
-
-                <p>
-                    <strong>Field:</strong>
-                    Information Technology & Information Science
-                </p>
-
-                <p>
-                    <strong>Interests:</strong>
-                    Technology, Libraries, Data, Web Development
-                </p>
-
-                <p>
-                    <strong>Career Goal:</strong>
-                    Technology-focused library and information work
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- EDUCATION -->
-    <div class="row mt-4" id="education">
-
-        <div class="col-12">
-
-            <div class="content-section">
-
-                <h2 class="section-title">
-                    Education
-                </h2>
-
-                <div class="row">
-
-                    <div class="col-md-6">
-
-                        <div class="card h-100">
-
-                            <div class="card-body">
-
-                                <h4>
-                                    Graduate Studies
-                                </h4>
-
-                                <h5>
-                                    Master of Information
-                                </h5>
-
-                                <p>
-                                    Library and Information Science
-                                </p>
-
-                                <p>
-                                    My graduate coursework focuses on
-                                    information organization, libraries,
-                                    technology, data, and digital
-                                    information.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-6 mt-3 mt-md-0">
-
-                        <div class="card h-100">
-
-                            <div class="card-body">
-
-                                <h4>
-                                    Undergraduate Studies
-                                </h4>
-
-                                <h5>
-                                    Information Technology &
-                                    Informatics
-                                </h5>
-
-                                <p>
-                                    Rutgers University
-                                </p>
-
-                                <p>
-                                    My undergraduate studies provided
-                                    a foundation in programming,
-                                    information technology, databases,
-                                    web development, and data analysis.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- SKILLS -->
-    <div class="row mt-4" id="skills">
-
-        <div class="col-12">
-
-            <div class="content-section">
-
-                <h2 class="section-title">
-                    Technical Skills
-                </h2>
-
-                <div class="row">
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-
-                        <div class="card skill-card">
-
-                            <h4>HTML</h4>
-
-                            <p>
-                                Creating structured and accessible
-                                web pages.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-
-                        <div class="card skill-card">
-
-                            <h4>CSS</h4>
-
-                            <p>
-                                Designing responsive layouts and
-                                styling web content.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-
-                        <div class="card skill-card">
-
-                            <h4>JavaScript</h4>
-
-                            <p>
-                                Adding interaction and functionality
-                                to websites.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-
-                        <div class="card skill-card">
-
-                            <h4>Python</h4>
-
-                            <p>
-                                Data analysis, programming, and
-                                working with datasets.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <h4 class="mt-4">
-                    Additional Skills
-                </h4>
-
-                <p>
-                    R &nbsp; | &nbsp;
-                    SQL &nbsp; | &nbsp;
-                    Excel &nbsp; | &nbsp;
-                    Bootstrap &nbsp; | &nbsp;
-                    PHP &nbsp; | &nbsp;
-                    Data Analysis
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- PROJECTS -->
-    <div class="row mt-4" id="projects">
-
-        <div class="col-12">
-
-            <div class="content-section">
-
-                <h2 class="section-title">
-                    Projects
-                </h2>
-
-                <div class="row">
-
-                    <!-- PROJECT 1 -->
-                    <div class="col-md-4 mb-4">
-
-                        <div class="card project-card">
-
-                            <div class="card-body">
-
-                                <h4>
-                                    Web Development
-                                </h4>
-
-                                <p>
-                                    Developed responsive websites
-                                    using HTML, CSS, JavaScript,
-                                    and Bootstrap.
-                                </p>
-
-                                <a href="#"
-                                   class="btn btn-primary">
-
-                                    View Project
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- PROJECT 2 -->
-                    <div class="col-md-4 mb-4">
-
-                        <div class="card project-card">
-
-                            <div class="card-body">
-
-                                <h4>
-                                    Data Analysis
-                                </h4>
-
-                                <p>
-                                    Worked with datasets using
-                                    Python, Pandas, NumPy, and R
-                                    to analyze and visualize data.
-                                </p>
-
-                                <a href="#"
-                                   class="btn btn-primary">
-
-                                    View Project
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- PROJECT 3 -->
-                    <div class="col-md-4 mb-4">
-
-                        <div class="card project-card">
-
-                            <div class="card-body">
-
-                                <h4>
-                                    Information Science
-                                </h4>
-
-                                <p>
-                                    Coursework involving metadata,
-                                    information organization,
-                                    databases, and digital
-                                    information systems.
-                                </p>
-
-                                <a href="#"
-                                   class="btn btn-primary">
-
-                                    View Project
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- EXPERIENCE -->
-    <div class="row mt-4" id="experience">
-
-        <div class="col-12">
-
-            <div class="content-section">
-
-                <h2 class="section-title">
-                    Experience
-                </h2>
-
-                <div class="row">
-
-                    <div class="col-md-6">
-
-                        <h4>
-                            Library & Technology
-                        </h4>
-
-                        <p>
-                            Experience supporting technology and
-                            digital services in a library environment.
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                Technology support
-                            </li>
-
-                            <li>
-                                Hardware and software troubleshooting
-                            </li>
-
-                            <li>
-                                Patron technology assistance
-                            </li>
-
-                            <li>
-                                Makerspace and technology support
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-
-                    <div class="col-md-6">
-
-                        <h4>
-                            Academic Experience
-                        </h4>
-
-                        <p>
-                            Coursework and projects have provided
-                            experience with:
-                        </p>
-
-                        <ul>
-
-                            <li>
-                                Web development
-                            </li>
-
-                            <li>
-                                Database systems
-                            </li>
-
-                            <li>
-                                Data analysis
-                            </li>
-
-                            <li>
-                                Information organization
-                            </li>
-
-                            <li>
-                                Programming
-                            </li>
-
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- INTERESTS -->
-    <div class="row mt-4">
-
-        <div class="col-12">
-
-            <div class="content-section">
-
-                <h2 class="section-title">
-                    Interests
-                </h2>
-
-                <ul class="nav nav-tabs">
-
-                    <li class="nav-item">
-
-                        <a class="nav-link active"
-                           data-toggle="tab"
-                           href="#technology">
-
-                            Technology
-
-                        </a>
-
-                    </li>
-
-                    <li class="nav-item">
-
-                        <a class="nav-link"
-                           data-toggle="tab"
-                           href="#libraries">
-
-                            Libraries
-
-                        </a>
-
-                    </li>
-
-                    <li class="nav-item">
-
-                        <a class="nav-link"
-                           data-toggle="tab"
-                           href="#data">
-
-                            Data
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-
-                <div class="tab-content border p-4">
-
-                    <div id="technology"
-                         class="container tab-pane active">
-
-                        <h3>Technology</h3>
-
-                        <p>
-                            I am interested in how technology can
-                            improve access to information and create
-                            better digital experiences.
-                        </p>
-
-                    </div>
-
-
-                    <div id="libraries"
-                         class="container tab-pane fade">
-
-                        <h3>Libraries</h3>
-
-                        <p>
-                            I am interested in the role technology
-                            plays in modern libraries, particularly
-                            digital services, makerspaces, and
-                            technology education.
-                        </p>
-
-                    </div>
-
-
-                    <div id="data"
-                         class="container tab-pane fade">
-
-                        <h3>Data</h3>
-
-                        <p>
-                            I enjoy working with datasets and using
-                            programming and analysis tools to find
-                            useful information in data.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- CONTACT -->
-    <div class="row mt-4" id="contact">
-
-        <div class="col-12">
-
-            <div class="content-section text-center">
-
-                <h2 class="section-title">
-                    Contact Me
-                </h2>
-
-                <p>
-                    Interested in connecting? Feel free to reach out.
-                </p>
-
-                <a href="mailto:your-email@example.com"
-                   class="btn btn-primary contact-button">
-
-                    Email Me
-
-                </a>
-
-                <a href="#"
-                   class="btn btn-secondary contact-button">
-
-                    LinkedIn
-
-                </a>
-
-                <a href="#"
-                   class="btn btn-dark contact-button">
-
-                    GitHub
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- FOOTER -->
-    <footer class="mt-4">
+        <h2>About Me</h2>
 
         <p>
-            &copy; 2026 Danny Thai
+            My name is Danny Thai. I am interested in information
+            technology, information science, data, web development,
+            and libraries.
         </p>
 
         <p>
-            Information Technology & Information Science
-            ePortfolio
+            My academic background has given me experience with
+            programming, web development, databases, data analysis,
+            and information organization. I enjoy learning how
+            technology can be used to make information easier to
+            access and understand.
         </p>
 
+        <h2>Education</h2>
+
+        <h3>Rutgers University-New Brunswick</h3>
+
+        <p>
+            I studied Information Technology and Informatics at
+            Rutgers University-New Brunswick. My coursework provided
+            me with a foundation in information technology,
+            programming, databases, and web development.
+        </p>
+
+        <h3>Master of Information</h3>
+
+        <p>
+            I am continuing my education in the information field
+            with a focus on Library and Information Science. My
+            interests include technology in libraries, digital
+            information, data, and information organization.
+        </p>
+
+        <h2>Areas of Interest</h2>
+
+        <ul>
+            <li>Information Technology</li>
+            <li>Library and Information Science</li>
+            <li>Data Science and Analytics</li>
+            <li>Web Development</li>
+            <li>Digital Information</li>
+            <li>Technology in Libraries</li>
+        </ul>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+
+            <p>My Social Links</p>
+
+            <a href="https://www.linkedin.com/in/dannythai20/"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                <i class="fa fa-linkedin"></i>
+
+            </a>
+
+        </div>
     </footer>
-
-
-</div>
 
 </body>
 
 </html>
+```
